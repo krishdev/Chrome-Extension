@@ -1,0 +1,20 @@
+{
+  "name": "Word count forum immihelp",
+  "version": "0.0.1",
+  "manifest_version": 2,
+  "permissions": [
+	"activeTab",
+    "https://*/",
+    "http://*/",
+    "storage"
+  ],
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": false
+  },
+  "content_security_policy":"script-src 'self' https://www.immihelp.com object-src 'self'",
+  "browser_action": {
+    "default_popup": "tab.html",
+    "default_title": "Count it"
+  }
+}
